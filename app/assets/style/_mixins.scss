@@ -1,5 +1,0 @@
-@mixin width($w,$h:$w) {
-    width: $w + px; 
-    height: $h + px;
-    @content   
-}
