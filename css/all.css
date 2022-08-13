@@ -1,0 +1,184 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.content {
+  width: 100%;
+}
+
+.peopleArea .people {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.peopleArea .nameItem:nth-child(1) {
+  font-weight: 700;
+  color: var(--bs-gray-900);
+  margin-bottom: 0.25rem;
+}
+
+.sidebar {
+  width: 296px;
+  height: 800px;
+  background-color: var(--bs-gray-100);
+}
+
+.logoArea {
+  background-color: var(--bs-gray-100);
+}
+
+.nav > .nav-link {
+  color: var(--bs-gray-900);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.nav > .nav-link:hover {
+  color: #198754;
+}
+
+.nav-link:nth-child(5)::before {
+  content: "";
+  border-left: 3px solid #198754;
+}
+
+.nav-link:last-child {
+  margin-bottom: 0;
+}
+
+.nav-link:first-child {
+  margin-top: 0;
+}
+
+.peopleArea .name {
+  color: var(--bs-gray-900);
+  height: 19px;
+}
+
+.header {
+  padding: 32px;
+}
+
+.header-icon > span {
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.header-icon > span:hover {
+  color: #198754;
+}
+
+.header .admin {
+  font-size: 24px;
+}
+
+.visibility,
+.edit {
+  cursor: pointer;
+}
+
+.visibility:hover,
+.edit:hover {
+  color: #198754;
+}
+
+.btn > .material-symbols-outlined {
+  color: #198754;
+}
+
+.culnm > .table {
+  margin-bottom: 64px;
+}
+
+.table thead {
+  line-height: 1.5;
+  font-weight: 700;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.table thead tr {
+  border-bottom: 1px solid var(--bs-gray-900);
+}
+
+.table thead tr th:nth-child(1),
+.table tbody tr :nth-child(1) {
+  width: 12.5%;
+}
+
+.table tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-bottom: 1px solid var(--bs-gray-400);
+}
+
+.table tbody td {
+  vertical-align: middle;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: var(--bs-gray-900);
+}
+
+.pagination li {
+  border: 1px solid var(--bs-success);
+  border-right: 0;
+  line-height: 24px;
+}
+/*# sourceMappingURL=all.css.map */

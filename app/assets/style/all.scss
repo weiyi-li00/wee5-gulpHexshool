@@ -1,0 +1,112 @@
+@import "./reset";
+@import "./var";
+@import "./mixins";
+.content {
+  width: 100%;
+}
+.peopleArea {
+  .people {
+    border-radius: 50%;
+    @include width(40);
+  }
+  .nameItem:nth-child(1) {
+    font-weight: 700;
+    color: var(--bs-gray-900);
+    margin-bottom: 0.25rem;
+  }
+}
+.sidebar {
+  @include width(296, 800) {
+    background-color: var(--bs-gray-100);
+  }
+}
+.logoArea {
+  background-color: var(--bs-gray-100);
+}
+.nav > .nav-link {
+  color: var(--bs-gray-900);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  line-height: 1.5;
+  font-weight: 700;
+  &:hover {
+    color: $green;
+  }
+}
+.nav-link:nth-child(5)::before {
+  content: "";
+  border-left: 3px solid $green;
+}
+
+.nav-link:last-child {
+  margin-bottom: 0;
+}
+.nav-link:first-child {
+  margin-top: 0;
+}
+.peopleArea {
+  .name {
+    color: var(--bs-gray-900);
+    height: 19px;
+  }
+}
+.header {
+  padding: 32px;
+  &-icon > span {
+    @include width(24);
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      color: $green;
+    }
+  }
+  .admin {
+    font-size: 24px;
+  }
+}
+.visibility,
+.edit {
+  cursor: pointer;
+  &:hover {
+    color: $green;
+  }
+}
+.btn > .material-symbols-outlined {
+  color: $green;
+}
+.culnm > .table {
+  margin-bottom: 64px;
+}
+.table thead {
+  line-height: 1.5;
+  font-weight: 700;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  tr {
+    border-bottom: 1px solid var(--bs-gray-900);
+  }
+}
+.table thead tr th:nth-child(1),
+.table tbody tr :nth-child(1) {
+  width: 12.5%;
+}
+.table tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  border-bottom: 1px solid var(--bs-gray-400);
+}
+.table tbody td {
+  vertical-align: middle;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  color: var(--bs-gray-900);
+}
+.pagination {
+  li {
+    border: 1px solid var(--bs-success);
+    border-right: 0;
+    line-height: 24px;
+  }
+}
